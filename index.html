@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Personal profile page">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <center>
+    <header>
+        <h1>Welcome to my world</h1>
+        <p class="heading">This is Subhashree, a tech enthusiast</p>
+    </header> <hr>
+
+    <section>
+        <h2>About me</h2>
+        <p>Hello! I'm Subhashree, and here's a little info about me.</p>
+        <img src="photo2.jpeg" alt="my pic" width="300">
+        <p class="description">As a dedicated Computer Science student with a passion for web development and Python programming, I am constantly seeking to expand my knowledge and skills in technology. My academic journey has equipped me with a solid foundation in computer science principles, while my hands-on projects have provided practical experience in developing real-world applications.</p>
+        <button class="CV"><a href="CV.pdf" style="color: white;">Download CV</a></button>
+    </section> <hr>
+
+    <section>
+        <h2>Contact Infomation</h2>
+        <p>Let's connect!</p>
+        <p><a href="mailto:subhashreedas9114@gmail.com" class="icon-link email-icon"><i class="fa-regular fa-envelope"></i></a>  <a href="https://www.linkedin.com/in/subhashree09" class="icon-link linkedin-icon"><i class="fa-brands fa-linkedin"></i></a></p>
+    </section> <hr>
+
+    <section>
+        <h2>My Skills</h2>
+       
+                    <div class="skills">
+                        <button >Web Development</button>
+                        <button>Python</button>
+                        <button>C</button>
+                        <button>Java</button>
+                    </div>
+            
+    </section> <hr>
+
+    <section>
+        <h2>Project</h2>
+        <p>Take a look at some of my works</p>
+        <div class="project">
+            <button onclick="redirect1()">Edutechx</button>
+            <button onclick="redirect2()">Skillbridge</button>
+            </div>
+        </div>
+    </section> <hr>
+
+    
+
+    <footer>
+        <p>Copyright&copy; 2024 Subhashree. Bulit by Subhashree</p>
+    </footer>
+    </center>
+    <script>
+        function redirect1(){
+    window.location.href = "p1.html";
+}
+
+function redirect2(){
+    window.location.href = "p2.html";
+}
+    </script>
+</body>
+</html>
