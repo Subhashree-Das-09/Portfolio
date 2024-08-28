@@ -1,6 +1,4 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
-
 
 body{
     font-family: 'Poppins',sans-serif;
@@ -62,7 +60,7 @@ img{
     box-shadow: 0 5px 15px rgba(0,0,0,0.2);
     object-fit: cover;
 }
- 
+
 .description{
     margin: 20px;
     padding: 40px;
@@ -70,9 +68,7 @@ img{
     padding-right: 18%;
 }
 
-
 .CV{
-    
     width: calc(100%-90px);
     background: linear-gradient(to right, #831bcd,#f9620b);
     color: #fff;
@@ -85,10 +81,11 @@ img{
     margin-top: 10px;
     transition: background-image 0.3s ease;
 }
+
 .CV:hover{
     background: linear-gradient(to right, #f9620b,#831bcd);
-
 }
+
 footer{
     background: linear-gradient(to right, #831bcd,#f9620b);
     color: #fff;
@@ -139,10 +136,9 @@ ul{
     display: flex;
     align-items: center;
     justify-content:space-evenly;
-    
 }
 
-.skill ,button{
+.skill, button{
     width: 20%;
     font-size: 15px;
     border-radius: 5px;
@@ -156,4 +152,129 @@ ul{
     align-items: center;
     justify-content: center;
     gap:15px;
+}
+
+/* Media Queries */
+
+/* Large screens (desktops) */
+@media only screen and (min-width: 1200px) {
+    /* Adjust layout and styling for large screens */
+    section {
+        padding: 40px;
+    }
+    .description {
+        padding-left: 25%;
+        padding-right: 25%;
+    }
+    .CV {
+        width: calc(100%-120px);
+    }
+    .icon-link {
+        width: 80px;
+        height: 80px;
+        font-size: 30px;
+    }
+    .skills {
+        justify-content: space-between;
+    }
+    .skill, button {
+        width: 20%;
+    }
+    .project {
+        gap: 30px;
+    }
+}
+
+/* Medium screens (tablets) */
+@media only screen and (min-width: 768px) and (max-width: 1199px) {
+    /* Adjust layout and styling for medium screens */
+    section {
+        padding: 30px;
+    }
+    .description {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+    .CV {
+        width: calc(100%-100px);
+    }
+    .icon-link {
+        width: 70px;
+        height: 70px;
+        font-size: 26px;
+    }
+    .skills {
+        justify-content: space-around;
+    }
+    .skill, button {
+        width: 18%;
+    }
+    .project {
+        gap: 20px;
+    }
+}
+
+/* Small screens (smartphones) */
+@media only screen and (max-width: 767px) {
+    /* Adjust layout and styling for small screens */
+    section {
+        padding: 20px;
+    }
+    .description {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .CV {
+        width: calc(100%-80px);
+    }
+    .icon-link {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill, button {
+        width: 40%;
+        margin: 10px;
+    }
+    .project {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    /* Adjust layout and styling for small screens */
+    section {
+        padding: 20px;
+    }
+    .description {
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+    .CV {
+        width: calc(100%-80px);
+    }
+    .icon-link {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+    }
+    .skills {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .skill, button {
+        width: 40%;
+        margin: 10px;
+    }
+    .project {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
 }
